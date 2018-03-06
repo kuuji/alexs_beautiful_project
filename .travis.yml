@@ -1,13 +1,13 @@
-sudo: required
 language: python
 python:
   - "3.6"
 
 services:
-  - docker
+  - postgresql
 
-before_install:
-  - docker run -d -p 5432:5432 -e POSTGRES_USER=alexs_beautiful_project --name alexs_beautiful_project_db postgres:10.3 
+before_script:
+  - psql -c 'create database alexs_beautiful_project;' -U postgres
+
 
 install:
   - pip install -r requirements/local.txt

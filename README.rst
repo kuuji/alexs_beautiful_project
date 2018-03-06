@@ -6,6 +6,8 @@ Behold My Awesome Project!
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
+.. image:: https://coveralls.io/repos/github/kuuji/alexs_beautiful_project/badge.svg?branch=master
+:target: https://coveralls.io/github/kuuji/alexs_beautiful_project?branch=master
 
 
 :License: MIT

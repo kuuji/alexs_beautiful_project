@@ -1,0 +1,15 @@
+sudo: required
+language: python
+python:
+  - "3.6"
+
+services:
+  - docker
+
+before_install:
+  - docker run -d -p 5432:5432 -e POSTGRES_USER=alexs_beautiful_project --name alexs_beautiful_project_db postgres:10.3 
+
+install:
+  - pip install -r requirements/local.txt
+# command to run tests
+script: pytest

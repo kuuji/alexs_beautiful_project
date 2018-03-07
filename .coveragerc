@@ -1,5 +1,3 @@
 [run]
 include = alexs_beautiful_project/*
 omit = *migrations*, *tests*
-plugins =
-    django_coverage_plugin

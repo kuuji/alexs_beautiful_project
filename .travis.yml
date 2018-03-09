@@ -1,9 +1,11 @@
 language: python
+sudo: required
 python:
   - "3.6"
 
 services:
   - postgresql
+  - docker
 
 before_script:
   - psql -c 'create database alexs_beautiful_project;' -U postgres

@@ -19,5 +19,3 @@ script: ./script.sh
 
 after_success:
   - ./after_success.sh
-
-before_deploy: kubectl set image deployment/alexs_beautiful_project alexs_beautiful_project=us.gcr.io/alexs_beautiful_project/alexs_beautiful_project:$TRAVIS_TAG

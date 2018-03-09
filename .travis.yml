@@ -8,7 +8,7 @@ services:
 before_script:
   - psql -c 'create database alexs_beautiful_project;' -U postgres
 
-before_install:
+before_install: ./before_install.sh
   - go get github.com/openshift/source-to-image/cmd/s2i
 
 install: ./install.sh

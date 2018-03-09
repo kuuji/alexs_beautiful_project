@@ -10,7 +10,7 @@ fi
 
 if [ ! -z $TRAVIS_TAG ]; then
   echo "deploy to k8s"
-  kubectl config view
-  kubectl config current-context
-  kubectl set image deployment/alexs_beautiful_project alexs_beautiful_project=us.gcr.io/alexs_beautiful_project/alexs_beautiful_project:$TRAVIS_TAG
+  ${HOME}/google-cloud-sdk/bin/kubectl config view
+  ${HOME}/google-cloud-sdk/bin/kubectl config current-context
+  ${HOME}/google-cloud-sdk/bin/kubectl set image deployment/alexs_beautiful_project alexs_beautiful_project=us.gcr.io/alexs_beautiful_project/alexs_beautiful_project:$TRAVIS_TAG
 fi

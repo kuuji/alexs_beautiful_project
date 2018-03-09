@@ -1,5 +1,5 @@
-#!/usr/bin/env sh
-set -euo pipefail
+#!/usr/bin/env bash
+set -euov pipefail
 IFS=$'\n\t'
 
  coveralls

@@ -12,7 +12,7 @@ before_install:
   - go get github.com/openshift/source-to-image/cmd/s2i
 
 install:
-  - pip install -r requirements/local.txt
+  # - pip install -r requirements/local.txt
 # command to run tests
 script: py.test --cov
 

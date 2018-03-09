@@ -17,4 +17,4 @@ install:
 script: py.test --cov
 
 after_success:
-  - coveralls
+  - ./after_success.sh

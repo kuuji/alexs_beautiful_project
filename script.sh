@@ -3,3 +3,5 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "# SCRIPT"
+
+py.test --cov

@@ -14,7 +14,8 @@ before_install:
 install:
   # - pip install -r requirements/local.txt
 # command to run tests
-script: py.test --cov
+script: 
+  # - py.test --cov
 
 after_success:
   - ./after_success.sh

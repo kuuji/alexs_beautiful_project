@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-coveralls
+# coveralls
 echo $TRAVIS_BRANCH
 echo $TRAVIS_TAG
 if [ "$TRAVIS_BRANCH" != "master" ]; then
